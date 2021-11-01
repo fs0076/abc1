@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+ char c='A';
+ int i,j,n;
+ scanf("%d",&n);
+ for(i=1;i<=n;i++)//       一共做n次 
+ {
+  for(j=1;j<=n-i+1;j++)//     第一排n个，第二排n减一个，依次下去。 
+  {                   //      j<=n-i+1;因为i从一开始，所以要加个一。 
+   printf("%c\t",c);//   第一是A，往后就一个个加。 
+   c++;
+  }
+  printf("\n");
+ }
+ return 0;
+}
